@@ -128,6 +128,14 @@ AUTHENTICATION_BACKENDS = [
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+# Send email with gmail
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'the email sender'
+# EMAIL_HOST_PASSWORD = 'the password of that email'
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
