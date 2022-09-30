@@ -6,3 +6,8 @@ from .models import Product
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['title', 'price', 'active', ]
+
+
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['product', 'author', 'body', 'stars', 'active', ]
+
