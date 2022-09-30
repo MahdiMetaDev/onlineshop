@@ -5,9 +5,8 @@
 {% endblock %}
 
 {% block content %}
-    <ul>
         {% for blog in blogs %}
-            <li><a href="#">{{ blog.title }}</a></li>
+            <h2><a href="{{ blog.get_absolute_url }}">{{ blog.title }}</a></h2>
+            <br>
         {% endfor %}
-    </ul>
 {% endblock %}

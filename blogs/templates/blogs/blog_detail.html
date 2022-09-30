@@ -1,0 +1,25 @@
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    blog-detail
+{% endblock %}
+
+{% block content %}
+    <h1>{{ blog.title }}</h1>
+    <hr>
+    {% if blog.cover %}
+        <div>
+            <img src="{{ blog.cover.url }}" alt="#" style="width: 200px; height: 250px">
+        </div>
+    {% else %}
+        <div>
+            <img src="{% static 'img/default_cover.jpg' %}" alt="image" style="width: 200px; height: 250px">
+        </div>
+    {% endif %}
+    <br>
+    <div>
+        <h3>{{ blog.content }}</h3>
+    </div>
+{% endblock %}
