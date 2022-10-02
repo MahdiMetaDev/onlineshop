@@ -2,6 +2,19 @@ from django.db import models
 from django.urls import reverse
 from django.contrib.auth import get_user_model
 
+# My Custom Managers
+
+
+class ActiveCommentManager(models.Manager):
+    """
+    This manager will return the active comments
+    """
+    def get_queryset(self):
+        return super(ActiveCommentManager, self).get_queryset().filter(active=True)
+
+
+# My Models
+
 
 class Product(models.Model):
     title = models.CharField(max_length=100)
@@ -38,6 +51,10 @@ class Comment(models.Model):
     datetime_modified = models.DateTimeField(auto_now=True)
 
     active = models.BooleanField(default=True)
+
+    # Managers
+    objects = models.Manager()
+    active_comments_manager = ActiveCommentManager()
 
     def get_absolute_url(self):
         return reverse('product_detail', args=[self.product.id])
