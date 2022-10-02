@@ -9,6 +9,7 @@ class CommentInline(admin.TabularInline):    # we also have StackedInline
     """
     model = Comment
     fields = ['author', 'body', 'stars', 'active', ]
+    extra = 0
 
 
 @admin.register(Product)
