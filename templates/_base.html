@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <!doctype html>
 <html lang="en">
@@ -55,28 +56,31 @@
                             <ul class="mainmenu d-lg-flex jusity-content-end jusity-content-lg-start pt-4">
                                 <li class="mainmenu__item menu-item-has-children active">
                                     <a href="{% url 'home' %}" class="mainmenu__link">
-                                        <span class="mm-text">خانه</span>
+                                        <span class="mm-text">{% trans 'home' %}</span>
                                     </a>
                                 </li>
                                 <li class="mainmenu__item menu-item-has-children">
                                     <a href="{% url 'products_list' %}" class="mainmenu__link">
-                                        <span class="mm-text">محصولات</span>
+                                        <span class="mm-text">{% trans 'products' %}</span>
                                     </a>
                                 </li>
                                 <li class="mainmenu__item menu-item-has-children">
                                     <a href="{% url 'blogs_list' %}" class="mainmenu__link">
-                                        <span class="mm-text">وبلاگ</span>
+                                        <span class="mm-text">{% trans 'blog' %}</span>
                                     </a>
                                 </li>
                                 <li class="mainmenu__item menu-item-has-children">
                                     <a href="#" class="mainmenu__link">
-                                        <span class="mm-text">صفحات</span>
+                                        <span class="mm-text">{% trans 'pages' %}</span>
                                     </a>
-                                </li>
-                                <li class="mainmenu__item">
-                                    <a href="contact-us.html" class="mainmenu__link">
-                                        <span class="mm-text">تماس با ما</span>
-                                    </a>
+                                    <ul class="user-info-menu">
+                                        <li>
+                                            <a class="text-right" href="{% url 'aboutus' %}">{% trans 'about us' %}</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-right" href="{% url 'callus' %}">{% trans 'call us' %}</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -92,7 +96,7 @@
                         <li class="header-toolbar__item mini-cart-item">
                             <a href="#miniCart" class="header-toolbar__btn toolbar-btn mini-cart-btn">
                                 <i class="flaticon flaticon-shopping-cart"></i>
-                                <sup class="mini-cart-count">2</sup>
+                                <sup class="mini-cart-count">۲</sup>
                             </a>
                         </li>
                         <li class="header-toolbar__item user-info">
@@ -101,16 +105,16 @@
                             </a>
                             <ul class="user-info-menu">
                                 <li>
-                                    <a class="text-right" href="my-account.html">حساب کاربری</a>
+                                    <a class="text-right" href="my-account.html">{% trans 'user account' %}</a>
                                 </li>
                                 <li>
-                                    <a class="text-right" href="cart.html">سبد خرید</a>
+                                    <a class="text-right" href="cart.html">{% trans 'cart' %}</a>
                                 </li>
                                 <li>
-                                    <a class="text-right" href="wishlist.html">علاقه مندی ها</a>
+                                    <a class="text-right" href="wishlist.html">{% trans 'favorites' %}</a>
                                 </li>
                                 <li>
-                                    <a class="text-right" href="order-tracking.html">تاریخچه سفارشات</a>
+                                    <a class="text-right" href="order-tracking.html">{% trans 'order history' %}</a>
                                 </li>
                             </ul>
                         </li>
@@ -131,6 +135,14 @@
     </div>
 </header>
 <!-- Header End -->
+
+{% if messages %}
+    <div class="container">
+        {% for message in messages %}
+            <div class="text-center alert alert-{{ message.tags }}">{{ message }}</div>
+        {% endfor %}
+    </div>
+{% endif %}
 
 <div class="container mt-3">
     {% block content %}
