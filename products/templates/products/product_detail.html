@@ -47,16 +47,18 @@
                                 <span class="money old-price text-danger">{% trans '210000' %} {% trans '$' %}</span>
                             </div>
                             <div class="product-action d-flex align-items-sm-center align-content-center mb--30">
-                                <div class="quantity-wrapper d-flex justify-content-start">
-                                    <div class="quantity">
-                                        <input type="number" class="quantity-input" name="qty" id="qty" value="1"
-                                               min="1">
+                                <form action="{% url 'cart:add_to_cart' product.id %}" method="post">
+                                    {% csrf_token %}
+                                    <div class="quantity-wrapper d-flex justify-content-start">
+                                        <div class="quantity">
+                                            <input type="number" class="quantity-input" name="quantity" id="qty"
+                                                   value="1" min="1" max="30">
+                                        </div>
+                                        <button type="submit"
+                                        class="btn btn-small btn-bg-red btn-color-white btn-hover-2">{% trans 'Add to cart' %}
+                                        </button>
                                     </div>
-                                </div>
-                                <button type="button" class="btn btn-small btn-bg-red btn-color-white btn-hover-2"
-                                        onclick="window.location.href='cart.html'">
-                                    {% trans 'Add to cart' %}
-                                </button>
+                                </form>
                             </div>
                             <div class="product-footer-meta mt-5 pt-5">
                                 <p><span class="m-0">{% trans 'Categories' %}:</span>
@@ -142,7 +144,8 @@
                                                                     </div>
                                                                     <div class="product-rating">
                                                                         <div class="m-0 star-rating star-five">
-                                                                            <span>Rated <strong class="rating">{{ comment.stars }}</strong> out of 5</span>
+                                                                            <span>Rated <strong
+                                                                                    class="rating">{{ comment.stars }}</strong> out of 5</span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -164,7 +167,8 @@
                                                     <form action="{% url 'comment_create' product.id %}" method="post">
                                                         {% csrf_token %}
                                                         {{ comment_form|crispy }}
-                                                        <button type="submit" class="btn btn-small btn-bg-red btn-color-white btn-hover-2">{% trans 'Submit' %}</button>
+                                                        <button type="submit"
+                                                                class="btn btn-small btn-bg-red btn-color-white btn-hover-2">{% trans 'Submit' %}</button>
                                                     </form>
                                                 </div>
                                             </div>
@@ -291,7 +295,8 @@
                         <span class="ammount">۱۴۸,۰۰۰ {% trans '$' %}</span>
                     </div>
                     <div class="mini-cart__buttons">
-                        <a href="cart.html" class="btn btn-fullwidth btn-bg-sand mb--20">{% trans 'View shopping cart' %}</a>
+                        <a href="cart.html"
+                           class="btn btn-fullwidth btn-bg-sand mb--20">{% trans 'View shopping cart' %}</a>
                         <a href="checkout.html" class="btn btn-fullwidth btn-bg-sand">{% trans 'payment' %}</a>
                     </div>
                 </div>
