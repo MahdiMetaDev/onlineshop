@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 11:14-0700\n"
-"PO-Revision-Date: 2022-10-04 21:45+0330\n"
+"POT-Creation-Date: 2022-10-05 13:56-0700\n"
+"PO-Revision-Date: 2022-10-06 00:27+0330\n"
 "Last-Translator:   <mahdi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\cart.py:36
+msgid "Product successfully added to cart"
+msgstr "محصول با موفقیت به سبد خرید اضافه شد."
 
 #: .\templates\cart\cart_detail.html:58 .\templates\cart\cart_detail.html:74
 msgid "$"
@@ -26,6 +30,6 @@ msgstr "تومان"
 msgid "Update"
 msgstr "بروزرسانی"
 
-#: .\templates\cart\cart_detail.html:83
+#: .\templates\cart\cart_detail.html:88
 msgid "Cart is empty! please add your shopping list."
 msgstr "سبد خرید خالی است ! لطفا لیست خرید را اضافه کنید."

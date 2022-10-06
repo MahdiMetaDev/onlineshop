@@ -158,21 +158,23 @@
                                                 </li>
                                             {% endfor %}
                                         </ul>
-                                        <div class="review-form-wrapper">
-                                            <div class="row">
-                                                <div class="border-top py-5 w-100"></div>
-                                                <div class="col-lg-8 m-auto">
-                                                    <span class="reply-title pull-right">{% trans 'Write your comment' %}</span>
-                                                    <br>
-                                                    <form action="{% url 'comment_create' product.id %}" method="post">
-                                                        {% csrf_token %}
-                                                        {{ comment_form|crispy }}
-                                                        <button type="submit"
-                                                                class="btn btn-small btn-bg-red btn-color-white btn-hover-2">{% trans 'Submit' %}</button>
-                                                    </form>
+                                        {% if user.is_authenticated %}
+                                            <div class="review-form-wrapper">
+                                                <div class="row">
+                                                    <div class="border-top py-5 w-100"></div>
+                                                    <div class="col-lg-8 m-auto">
+                                                        <span class="reply-title pull-right">{% trans 'Write your comment' %}</span>
+                                                        <br>
+                                                        <form action="{% url 'comment_create' product.id %}" method="post">
+                                                            {% csrf_token %}
+                                                            {{ comment_form|crispy }}
+                                                            <button type="submit"
+                                                                    class="btn btn-small btn-bg-red btn-color-white btn-hover-2">{% trans 'Submit' %}</button>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
