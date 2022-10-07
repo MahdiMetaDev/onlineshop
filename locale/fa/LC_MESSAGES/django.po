@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-03 05:42-0700\n"
-"PO-Revision-Date: 2022-10-03 16:14+0330\n"
+"POT-Creation-Date: 2022-10-06 13:13-0700\n"
+"PO-Revision-Date: 2022-10-06 23:45+0330\n"
 "Last-Translator:   <mahdi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -42,21 +42,24 @@ msgstr "درباره ما"
 msgid "call us"
 msgstr "تماس با ما"
 
-#: .\templates\_base.html:108
+#: .\templates\_base.html:109 .\templates\account\logout.html:10
+#: .\templates\account\logout.html:14
+msgid "logout"
+msgstr "خروج"
+
+#: .\templates\_base.html:112
 msgid "user account"
 msgstr "حساب کاربری"
 
-#: .\templates\_base.html:111
-msgid "cart"
-msgstr "سبد خرید"
+#: .\templates\_base.html:116 .\templates\account\login.html:12
+#: .\templates\account\login.html:16
+msgid "login"
+msgstr "ورود"
 
-#: .\templates\_base.html:114
-msgid "favorites"
-msgstr "علاقه مندی ها"
-
-#: .\templates\_base.html:117
-msgid "order history"
-msgstr "تاریخچه سفارشات"
+#: .\templates\_base.html:119 .\templates\account\signup.html:12
+#: .\templates\account\signup.html:16
+msgid "signup"
+msgstr "ثبت نام"
 
 #: .\templates\account\email\email_confirmation_message.txt:5
 #, python-format
@@ -94,3 +97,16 @@ msgid ""
 "This e-mail confirmation link expired or is invalid. Please <a "
 "href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
+
+#: .\templates\account\logout.html:11
+msgid "Are you sure you want to logout?"
+msgstr "آیا از خروج خود مطمئن هستید؟"
+
+#~ msgid "cart"
+#~ msgstr "سبد خرید"
+
+#~ msgid "favorites"
+#~ msgstr "علاقه مندی ها"
+
+#~ msgid "order history"
+#~ msgstr "تاریخچه سفارشات"

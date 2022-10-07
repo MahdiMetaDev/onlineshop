@@ -1,12 +1,19 @@
 {% extends '_base.html' %}
 
+{% load i18n %}
+
 {% block title %}
     blogs-list
 {% endblock %}
 
 {% block content %}
-        {% for blog in blogs %}
-            <h2><a href="{{ blog.get_absolute_url }}">{{ blog.title }}</a></h2>
-            <br>
-        {% endfor %}
+    {% for blog in blogs %}
+        <div class="card">
+            <h5 class="card-header">{{ blog.title }}</h5>
+            <div class="card-body">
+                <p class="card-text">{{ blog.content }}</p>
+                <a href="{{ blog.get_absolute_url }}" class="btn btn-small btn-bg-sand btn-color-dark px-3">{% trans 'Go to details' %}</a>
+            </div>
+        </div><br>
+    {% endfor %}
 {% endblock %}

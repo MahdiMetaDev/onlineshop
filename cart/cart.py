@@ -73,7 +73,7 @@ class Cart:
         """
         will return the number of products(product_ids) in the cart
         """
-        return len(self.cart.keys())
+        return sum(item['quantity'] for item in self.cart.values())
 
     def clear(self):
         """

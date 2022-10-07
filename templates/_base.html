@@ -1,5 +1,6 @@
 {% load static %}
 {% load i18n %}
+{% load digit_convert %}
 
 <!doctype html>
 <html lang="en">
@@ -54,7 +55,7 @@
                         </div>
                         <div class="mainmenu-nav d-none d-lg-block w-100 pr-3">
                             <ul class="mainmenu d-lg-flex jusity-content-end jusity-content-lg-start pt-4">
-                                <li class="mainmenu__item menu-item-has-children active">
+                                <li class="mainmenu__item menu-item-has-children">
                                     <a href="{% url 'home' %}" class="mainmenu__link">
                                         <span class="mm-text">{% trans 'home' %}</span>
                                     </a>
@@ -96,7 +97,7 @@
                         <li class="header-toolbar__item mini-cart-item">
                             <a href="#miniCart" class="header-toolbar__btn toolbar-btn mini-cart-btn">
                                 <i class="flaticon flaticon-shopping-cart"></i>
-                                <sup class="mini-cart-count">۲</sup>
+                                <sup class="mini-cart-count">{{ cart|length|persian_int }}</sup>
                             </a>
                         </li>
                         <li class="header-toolbar__item user-info">
@@ -104,18 +105,21 @@
                                 <i class="flaticon flaticon-user"></i>
                             </a>
                             <ul class="user-info-menu">
-                                <li>
-                                    <a class="text-right" href="my-account.html">{% trans 'user account' %}</a>
-                                </li>
-                                <li>
-                                    <a class="text-right" href="cart.html">{% trans 'cart' %}</a>
-                                </li>
-                                <li>
-                                    <a class="text-right" href="wishlist.html">{% trans 'favorites' %}</a>
-                                </li>
-                                <li>
-                                    <a class="text-right" href="order-tracking.html">{% trans 'order history' %}</a>
-                                </li>
+                                {% if user.is_authenticated %}
+                                    <li>
+                                        <a class="text-right" href="{% url 'account_logout' %}">{% trans 'logout' %}</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-right" href="user_account.html">{% trans 'user account' %}</a>
+                                    </li>
+                                {% else %}
+                                    <li>
+                                        <a class="text-right" href="{% url 'account_login' %}">{% trans 'login' %}</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-right" href="{% url 'account_signup' %}">{% trans 'signup' %}</a>
+                                    </li>
+                                {% endif %}
                             </ul>
                         </li>
                         <li class="header-toolbar__item">

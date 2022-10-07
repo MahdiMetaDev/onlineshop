@@ -1,14 +1,17 @@
 {% extends '_base.html' %}
 
+{% load i18n %}
+
 {% block title %}
     logout-page
 {% endblock %}
 
 {% block content %}
-    <h1>LOGOUT</h1>
-    <h2>Are you sure you want to logout?</h2>
+    <h1>{% trans 'logout' %}</h1>
+    <hr>
+    <h2>{% trans 'Are you sure you want to logout?' %}</h2><br>
     <form action="" method="post">
         {% csrf_token %}
-        <button type="submit" class="btn btn-success mt-2">logout</button>
+        <button type="submit" class="btn btn-small btn-bg-sand btn-color-dark px-3">{% trans 'logout' %}</button>
     </form>
 {% endblock %}
