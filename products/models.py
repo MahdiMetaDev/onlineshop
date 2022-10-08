@@ -3,6 +3,8 @@ from django.urls import reverse
 from django.contrib.auth import get_user_model
 from django.utils.translation import gettext_lazy as _
 
+from ckeditor.fields import RichTextField
+
 # My Custom Managers
 
 
@@ -18,11 +20,12 @@ class ActiveCommentManager(models.Manager):
 
 
 class Product(models.Model):
-    title = models.CharField(max_length=100)
-    description = models.TextField()
-    price = models.PositiveIntegerField(default=True)
+    title = models.CharField(_('title'), max_length=100)
+    description = RichTextField(_('description'))
+    short_description = models.TextField(_('short description'), blank=True)
+    price = models.PositiveIntegerField(_('price'), default=True)
     active = models.BooleanField(default=True)
-    cover = models.ImageField(upload_to='covers/', default='covers/default_cover.jpg')
+    cover = models.ImageField(_('image'), upload_to='covers/', default='covers/default_cover.jpg')
 
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
