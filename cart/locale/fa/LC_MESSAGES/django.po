@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-06 13:02-0700\n"
-"PO-Revision-Date: 2022-10-06 00:27+0330\n"
+"POT-Creation-Date: 2022-10-08 04:45-0700\n"
+"PO-Revision-Date: 2022-10-08 15:15+0330\n"
 "Last-Translator:   <mahdi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,19 +18,53 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\cart\cart.py:36
+#: .\cart.py:36
 msgid "Product successfully added to cart"
 msgstr "محصول با موفقیت به سبد خرید اضافه شد."
 
-#: .\cart\templates\cart\cart_detail.html:58
-#: .\cart\templates\cart\cart_detail.html:74
+#: .\templates\cart\cart_detail.html:60 .\templates\cart\cart_detail.html:76
+#: .\templates\cart\cart_detail.html:106 .\templates\cart\cart_sidebar.html:27
+#: .\templates\cart\cart_sidebar.html:35
 msgid "$"
 msgstr "تومان"
 
-#: .\cart\templates\cart\cart_detail.html:69
+#: .\templates\cart\cart_detail.html:71
 msgid "Update"
 msgstr "بروزرسانی"
 
-#: .\cart\templates\cart\cart_detail.html:88
+#: .\templates\cart\cart_detail.html:86
+msgid "empty the cart"
+msgstr "خالی کردن سبد خرید"
+
+#: .\templates\cart\cart_detail.html:90
 msgid "Cart is empty! please add your shopping list."
 msgstr "سبد خرید خالی است ! لطفا لیست خرید را اضافه کنید."
+
+#: .\templates\cart\cart_detail.html:98
+#| msgid "order record"
+msgid "order price"
+msgstr "قیمت سفارش"
+
+#: .\templates\cart\cart_detail.html:102
+msgid "total value"
+msgstr "جمع کل"
+
+#: .\templates\cart\cart_detail.html:113
+msgid "order record"
+msgstr "ثبت سفارش"
+
+#: .\templates\cart\cart_sidebar.html:9
+msgid "cart"
+msgstr "سبد خرید"
+
+#: .\templates\cart\cart_sidebar.html:34
+msgid "total"
+msgstr "مجموع"
+
+#: .\templates\cart\cart_sidebar.html:39
+msgid "go to cart"
+msgstr "مشاهده سبد خرید"
+
+#: .\templates\cart\cart_sidebar.html:40
+msgid "payment"
+msgstr "پرداخت"

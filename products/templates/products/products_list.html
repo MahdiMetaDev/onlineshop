@@ -2,6 +2,7 @@
 
 {% load static %}
 {% load i18n %}
+{% load humanize %}
 {% load digit_convert %}
 
 {% block title %}
@@ -60,7 +61,7 @@
                                                                 <a href="{{ product.get_absolute_url }}">{{ product.title }}</a>
                                                             </h3>
                                                             <div class="product-price-wrapper mb--30">
-                                                                <span class="money">{{ product.price|persian_int }} {% trans '$' %}</span>
+                                                                <span class="money">{{ product.price|intcomma:False|persian_int }} {% trans '$' %}</span>
                                                             </div>
                                                             <a href="cart.html"
                                                                class="btn btn-small btn-bg-sand btn-color-dark px-3">

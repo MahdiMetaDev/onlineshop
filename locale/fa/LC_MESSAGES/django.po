@@ -101,12 +101,3 @@ msgstr ""
 #: .\templates\account\logout.html:11
 msgid "Are you sure you want to logout?"
 msgstr "آیا از خروج خود مطمئن هستید؟"
-
-#~ msgid "cart"
-#~ msgstr "سبد خرید"
-
-#~ msgid "favorites"
-#~ msgstr "علاقه مندی ها"
-
-#~ msgid "order history"
-#~ msgstr "تاریخچه سفارشات"

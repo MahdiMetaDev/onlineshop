@@ -43,8 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',   # (new)
 
     # Third party
+    'jalali_date',
     'crispy_forms',
     'allauth',
     'allauth.account',

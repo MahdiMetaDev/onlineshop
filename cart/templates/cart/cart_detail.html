@@ -3,6 +3,8 @@
 {% load crispy_forms_filters %}
 {% load static %}
 {% load i18n %}
+{% load digit_convert %}
+{% load humanize %}
 
 
 {% block title %}
@@ -55,7 +57,7 @@
                                                     </td>
                                                     <td class="product-price">
                                                                 <span class="product-price-wrapper">
-                                                                    <span class="money">{{ item.product_obj.price }} {% trans '$' %}</span>
+                                                                    <span class="money">{{ item.product_obj.price|intcomma:False|persian_int }} {% trans '$' %}</span>
                                                                 </span>
                                                     </td>
                                                     <td class="product-quantity">
@@ -71,7 +73,7 @@
                                                     </td>
                                                     <td class="product-total-price">
                                                         <span class="product-price-wrapper">
-                                                            <span class="money">{{ item.total_price }} {% trans '$' %}</span>
+                                                            <span class="money">{{ item.total_price|intcomma:False|persian_int }} {% trans '$' %}</span>
                                                         </span>
                                                     </td>
                                                 </tr>
@@ -81,7 +83,7 @@
                                     </div>
                                     <div class="row no-gutters border-top pt--20 mt--20">
                                         <div class="col-sm-6 text-sm-right">
-                                            <button type="submit" class="cart-form__btn">خالی کردن سبد خرید</button>
+                                            <a href="{% url 'cart:clear_cart' %}">{% trans 'empty the cart' %}</a>
                                         </div>
                                     </div>
                                 {% else %}
@@ -93,22 +95,22 @@
                     <div class="col-lg-4">
                         <div class="cart-collaterals mr--2">
                             <div class="cart-totals">
-                                <h5 class="font-size-14 font-bold mb--15">مجموع</h5>
+                                <h5 class="font-size-14 font-bold mb--15">{% trans 'order price' %}</h5>
                                 <div class="cart-calculator">
                                     <div class="cart-calculator__item order-total">
                                         <div class="cart-calculator__item--head">
-                                            <span>جمع کل</span>
+                                            <span>{% trans 'total value' %}</span>
                                         </div>
                                         <div class="cart-calculator__item--value">
                                                 <span class="product-price-wrapper">
-                                                    <span class="money">{{ cart.get_total_price }} تومان</span>
+                                                    <span class="money">{{ cart.get_total_price|intcomma:False|persian_int }} {% trans '$' %}</span>
                                                 </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <a href="checkout.html" class="btn btn-fullwidth btn-bg-red btn-color-white btn-hover-2">
-                                ثبت سفارش
+                                {% trans 'order record' %}
                             </a>
                         </div>
                     </div>

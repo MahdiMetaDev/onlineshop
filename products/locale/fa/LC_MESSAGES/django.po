@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 12:11-0700\n"
-"PO-Revision-Date: 2022-10-07 22:43+0330\n"
+"POT-Creation-Date: 2022-10-08 00:46-0700\n"
+"PO-Revision-Date: 2022-10-08 11:17+0330\n"
 "Last-Translator:   <mahdi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -46,142 +46,112 @@ msgstr "متن دیدگاه"
 msgid "your score"
 msgstr "امتیاز شما"
 
-#: .\templates\products\product_detail.html:20
+#: .\templates\products\product_detail.html:22
 msgid "Product details"
 msgstr "جزئیات محصول"
 
-#: .\templates\products\product_detail.html:45
-msgid "148000"
-msgstr "۱۴۸۰۰۰"
-
-#: .\templates\products\product_detail.html:45
 #: .\templates\products\product_detail.html:47
-#: .\templates\products\product_detail.html:254
-#: .\templates\products\product_detail.html:272
-#: .\templates\products\product_detail.html:290
-#: .\templates\products\product_detail.html:297
+#: .\templates\products\product_detail.html:49
 #: .\templates\products\products_list.html:63
-#: .\templates\products\products_list.html:161
-#: .\templates\products\products_list.html:169
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\products\product_detail.html:47
-msgid "210000"
-msgstr "۲۱۰۰۰۰"
+#: .\templates\products\product_detail.html:49
+#| msgid "210000"
+msgid "650000"
+msgstr "۶۵۰۰۰۰"
 
-#: .\templates\products\product_detail.html:58
+#: .\templates\products\product_detail.html:60
 msgid "Add to cart"
 msgstr "اضافه به سبد خرید"
 
-#: .\templates\products\product_detail.html:64
+#: .\templates\products\product_detail.html:66
 msgid "Categories"
 msgstr "دسته بندی ها"
 
-#: .\templates\products\product_detail.html:65
+#: .\templates\products\product_detail.html:67
 msgid "Dress"
 msgstr "لباس"
 
-#: .\templates\products\product_detail.html:66
+#: .\templates\products\product_detail.html:68
 msgid "Summer"
 msgstr "تابستانی"
 
-#: .\templates\products\product_detail.html:67
+#: .\templates\products\product_detail.html:69
 msgid "Warm"
 msgstr "گرم"
 
-#: .\templates\products\product_detail.html:68
+#: .\templates\products\product_detail.html:70
 msgid "Feminine"
 msgstr "زنانه"
 
-#: .\templates\products\product_detail.html:80
+#: .\templates\products\product_detail.html:82
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: .\templates\products\product_detail.html:84
+#: .\templates\products\product_detail.html:86
 msgid "Properties"
 msgstr "ویژگی ها"
 
-#: .\templates\products\product_detail.html:88
+#: .\templates\products\product_detail.html:90
 msgid "comments"
 msgstr "نظرات"
 
-#: .\templates\products\product_detail.html:104
+#: .\templates\products\product_detail.html:106
 msgid "Weight"
 msgstr "وزن"
 
-#: .\templates\products\product_detail.html:105
+#: .\templates\products\product_detail.html:107
 msgid "430 grams"
 msgstr "۴۳۰ گرم"
 
-#: .\templates\products\product_detail.html:108
+#: .\templates\products\product_detail.html:110
 msgid "size"
 msgstr "سایز"
 
-#: .\templates\products\product_detail.html:112
+#: .\templates\products\product_detail.html:114
 msgid "color"
 msgstr "رنگ"
 
-#: .\templates\products\product_detail.html:114
+#: .\templates\products\product_detail.html:116
 msgid "black"
 msgstr "سیاه"
 
-#: .\templates\products\product_detail.html:115
+#: .\templates\products\product_detail.html:117
 msgid "green"
 msgstr "سبز"
 
-#: .\templates\products\product_detail.html:116
+#: .\templates\products\product_detail.html:118
 msgid "red"
 msgstr "قرمز"
 
-#: .\templates\products\product_detail.html:117
+#: .\templates\products\product_detail.html:119
 msgid "orange"
 msgstr "نارنجی"
 
-#: .\templates\products\product_detail.html:128
+#: .\templates\products\product_detail.html:130
 msgid "Comment for"
 msgstr "نظر برای"
 
-#: .\templates\products\product_detail.html:166
+#: .\templates\products\product_detail.html:168
 msgid "Write your comment"
 msgstr "نظر خود را بنویسید"
 
-#: .\templates\products\product_detail.html:172
+#: .\templates\products\product_detail.html:174
 msgid "Submit"
 msgstr "ارسال"
 
-#: .\templates\products\product_detail.html:202
+#: .\templates\products\product_detail.html:204
 msgid "About us"
 msgstr "درباره ما"
 
-#: .\templates\products\product_detail.html:203
+#: .\templates\products\product_detail.html:205
 msgid "Terms and Conditions"
 msgstr "قوانین و مقررات"
 
-#: .\templates\products\product_detail.html:204
+#: .\templates\products\product_detail.html:206
 msgid "Contact us"
 msgstr "تماس با ما"
-
-#: .\templates\products\product_detail.html:237
-msgid "Cart"
-msgstr "سبد خرید"
-
-#: .\templates\products\product_detail.html:248
-msgid "Product number 1"
-msgstr "محصول شماره یک"
-
-#: .\templates\products\product_detail.html:296
-msgid "Total"
-msgstr "جمع کل"
-
-#: .\templates\products\product_detail.html:301
-msgid "View shopping cart"
-msgstr "مشاهده سبد خرید"
-
-#: .\templates\products\product_detail.html:302
-#: .\templates\products\products_list.html:173
-msgid "payment"
-msgstr "پرداخت"
 
 #: .\templates\products\products_list.html:26
 msgid "shows 1-20 from 49"
@@ -215,23 +185,36 @@ msgstr "در باکس زیرعبارت خود را وارد کنید"
 msgid "search among products..."
 msgstr "جستجو میان محصولات"
 
-#: .\templates\products\products_list.html:143
-msgid "cart"
-msgstr "سبد خرید"
-
-#: .\templates\products\products_list.html:168
-#| msgid "Total"
-msgid "total"
-msgstr "جمع کل"
-
-#: .\templates\products\products_list.html:172
-#| msgid "Add to cart"
-msgid "go to cart"
-msgstr "مشاهده سبد خرید"
-
 #: .\views.py:30
 msgid "Your comment created successfully"
 msgstr "نظر شما با موفقیت اضافه شد!"
+
+#~ msgid "148000"
+#~ msgstr "۱۴۸۰۰۰"
+
+#~ msgid "Cart"
+#~ msgstr "سبد خرید"
+
+#~ msgid "Product number 1"
+#~ msgstr "محصول شماره یک"
+
+#~ msgid "Total"
+#~ msgstr "جمع کل"
+
+#~ msgid "View shopping cart"
+#~ msgstr "مشاهده سبد خرید"
+
+#~ msgid "payment"
+#~ msgstr "پرداخت"
+
+#~ msgid "cart"
+#~ msgstr "سبد خرید"
+
+#~ msgid "total"
+#~ msgstr "جمع کل"
+
+#~ msgid "go to cart"
+#~ msgstr "مشاهده سبد خرید"
 
 #~ msgid "1"
 #~ msgstr "۱"
