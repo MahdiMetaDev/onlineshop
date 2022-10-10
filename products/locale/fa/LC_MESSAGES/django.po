@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-08 11:08-0700\n"
+"POT-Creation-Date: 2022-10-10 04:43-0700\n"
 "PO-Revision-Date: 2022-10-08 21:39+0330\n"
 "Last-Translator:   <mahdi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,6 @@ msgid "description"
 msgstr "توضیحات "
 
 #: .\models.py:25
-#| msgid "description"
 msgid "short description"
 msgstr "توضیح مختصر"
 
@@ -35,35 +34,39 @@ msgstr "توضیح مختصر"
 msgid "price"
 msgstr "قیمت"
 
-#: .\models.py:28
+#: .\models.py:27
+msgid "quantity"
+msgstr ""
+
+#: .\models.py:29
 msgid "image"
 msgstr "عکس"
 
-#: .\models.py:43
+#: .\models.py:47
 msgid "Very Bad"
 msgstr "خیلی بد"
 
-#: .\models.py:44
+#: .\models.py:48
 msgid "Bad"
 msgstr "بد"
 
-#: .\models.py:45
+#: .\models.py:49
 msgid "Normal"
 msgstr "معمولی"
 
-#: .\models.py:46
+#: .\models.py:50
 msgid "Good"
 msgstr "خوب"
 
-#: .\models.py:47
+#: .\models.py:51
 msgid "Very Good"
 msgstr "خیلی خوب"
 
-#: .\models.py:52
+#: .\models.py:56
 msgid "comment text"
 msgstr "متن دیدگاه"
 
-#: .\models.py:53
+#: .\models.py:57
 msgid "your score"
 msgstr "امتیاز شما"
 

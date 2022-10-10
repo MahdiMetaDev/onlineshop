@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-06 13:13-0700\n"
+"POT-Creation-Date: 2022-10-08 11:24-0700\n"
 "PO-Revision-Date: 2022-10-06 23:45+0330\n"
 "Last-Translator:   <mahdi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,45 +18,45 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\templates\_base.html:59
+#: .\templates\_base.html:60
 msgid "home"
 msgstr "خانه"
 
-#: .\templates\_base.html:64
+#: .\templates\_base.html:65
 msgid "products"
 msgstr "محصولات"
 
-#: .\templates\_base.html:69
+#: .\templates\_base.html:70
 msgid "blog"
 msgstr "وبلاگ"
 
-#: .\templates\_base.html:74
+#: .\templates\_base.html:75
 msgid "pages"
 msgstr "صفحات"
 
-#: .\templates\_base.html:78
+#: .\templates\_base.html:79
 msgid "about us"
 msgstr "درباره ما"
 
-#: .\templates\_base.html:81
+#: .\templates\_base.html:82
 msgid "call us"
 msgstr "تماس با ما"
 
-#: .\templates\_base.html:109 .\templates\account\logout.html:10
-#: .\templates\account\logout.html:14
+#: .\templates\_base.html:110 .\templates\account\logout.html:10
+#: .\templates\account\logout.html:15
 msgid "logout"
 msgstr "خروج"
 
-#: .\templates\_base.html:112
+#: .\templates\_base.html:113
 msgid "user account"
 msgstr "حساب کاربری"
 
-#: .\templates\_base.html:116 .\templates\account\login.html:12
+#: .\templates\_base.html:117 .\templates\account\login.html:12
 #: .\templates\account\login.html:16
 msgid "login"
 msgstr "ورود"
 
-#: .\templates\_base.html:119 .\templates\account\signup.html:12
+#: .\templates\_base.html:120 .\templates\account\signup.html:12
 #: .\templates\account\signup.html:16
 msgid "signup"
 msgstr "ثبت نام"
@@ -94,10 +94,10 @@ msgstr "تایید"
 #: .\templates\account\email_confirm.html:26
 #, python-format
 msgid ""
-"This e-mail confirmation link expired or is invalid. Please <a "
-"href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+"This e-mail confirmation link expired or is invalid. Please <a href=\"%"
+"(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
 
-#: .\templates\account\logout.html:11
+#: .\templates\account\logout.html:12
 msgid "Are you sure you want to logout?"
 msgstr "آیا از خروج خود مطمئن هستید؟"

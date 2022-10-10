@@ -23,12 +23,16 @@ class Product(models.Model):
     title = models.CharField(_('title'), max_length=100)
     description = RichTextField(_('description'))
     short_description = models.TextField(_('short description'), blank=True)
-    price = models.PositiveIntegerField(_('price'), default=True)
+    price = models.PositiveIntegerField(_('price'), default='0')
+    quantity = models.PositiveIntegerField(_('quantity'), blank=True, null=True)
     active = models.BooleanField(default=True)
     cover = models.ImageField(_('image'), upload_to='covers/', default='covers/default_cover.jpg')
 
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
+
+    def is_in_stock(self):
+        return self.quantity > 0
 
     def __str__(self):
         return self.title
